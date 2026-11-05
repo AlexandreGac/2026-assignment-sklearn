@@ -128,7 +128,6 @@ class RegistrationSplit(BaseCrossValidator):
         n_splits : int
             The number of valid splits.
         """
-        # Return the number of valid splits - TODO
         return sum(1 for _ in self.split(X, y, groups))
 
     def split(self, X, y, groups=None):
